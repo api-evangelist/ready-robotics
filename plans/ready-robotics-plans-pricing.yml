@@ -1,0 +1,18 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.ready-robotics.com/
+plan_count: 0
+note: >-
+  No pricing or plan tiers could be recorded. READY Robotics sold Forge/OS as a quoted industrial
+  automation product through distributors and integrators rather than as self-serve API plans, and
+  the company ceased operations in August 2024. The marketing site still resolves but answers every
+  request with a Cloudflare interactive challenge (HTTP 403), and every commercial or documentation
+  host it operated is NXDOMAIN, so this zero is an unverified zero — it records that nothing is
+  readable, not that a pricing page was read and found empty.
+plans: []
+evidence:
+- url: https://www.ready-robotics.com/
+  status: 403
+- url: https://market.ready-robotics.com/
+  status: 0
+  detail: NXDOMAIN

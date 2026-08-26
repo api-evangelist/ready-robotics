@@ -1,0 +1,84 @@
+generated: '2026-08-26'
+method: probed
+source: direct HTTPS probes with a browser User-Agent, 2026-08-26
+note: >-
+  No document was retrieved on any host. Every path on every surviving READY Robotics host returns
+  HTTP 403 with a Cloudflare interactive JavaScript challenge ("Just a moment..."), so this is a
+  bot-challenge wall rather than a recorded absence — nothing here proves the provider does or does
+  not serve a .well-known surface. Every host that ever carried the developer surface
+  (developer., docs., portal., market., support., dev.ready-robotics.com) is NXDOMAIN and could not
+  be probed at all; the company ceased operations in August 2024. NO WellKnown or SecurityTxt pointer
+  is emitted, because no path returned a 200 carrying a real document.
+hit_count: 0
+hosts:
+- host: https://www.ready-robotics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+- host: https://ready-robotics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+- host: https://academy.ready-robotics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+unresolvable_hosts:
+- host: developer.ready-robotics.com
+  status: NXDOMAIN
+  note: carried the Forge Edge developer documentation until at least 2023-06
+- host: docs.ready-robotics.com
+  status: NXDOMAIN
+  note: carried the Forge/OS Docusaurus documentation until at least 2024-04
+- host: portal.ready-robotics.com
+  status: NXDOMAIN
+- host: market.ready-robotics.com
+  status: NXDOMAIN
+- host: support.ready-robotics.com
+  status: NXDOMAIN
+- host: dev.ready-robotics.com
+  status: NXDOMAIN
+- host: kb.ready-robotics.com
+  status: NXDOMAIN
+- host: labs.ready-robotics.com
+  status: NXDOMAIN
+- host: ecosystem.ready-robotics.com
+  status: NXDOMAIN
+- host: download.ready-robotics.com
+  status: NXDOMAIN

@@ -1,0 +1,49 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  npm registry search, PyPI, crates.io and the GitHub organization github.com/ready-robotics,
+  probed 2026-08-26
+note: >-
+  READY Robotics published no client library to any public package registry. npm, PyPI and crates.io
+  return nothing first-party (the unrelated `forgeos`, `@synctek/forgeos` and `forgeos-mcp` npm
+  packages published in 2026 belong to other projects and are NOT this company's). The only
+  first-party distributable that survives is source-distributed from GitHub: the RAL2 sample driver,
+  a C++/Qt plugin template for writing Forge/OS robot drivers. Because it is not published to a
+  registry, no registry metadata endpoint exists for it; the version below is read from the
+  repository's own manifest.json and the date from the last push to its default branch. No `SDKs`
+  pointer is emitted — this is a driver plugin template, not a client library for a callable API,
+  and the company shipped no public API for a client to wrap.
+packages:
+- language: cpp
+  registry: github
+  name: ral2-sample-driver
+  url: https://github.com/ready-robotics/ral2-sample-driver
+  install: git clone https://github.com/ready-robotics/ral2-sample-driver
+  official: true
+  version: 0.1.0
+  published: '2024-05-17'
+  version_source: https://raw.githubusercontent.com/ready-robotics/ral2-sample-driver/experimental/manifest.json
+  default_branch: experimental
+  targets: Forge/OS 5.5.0
+  description: >-
+    Sample ral2::Driver interface implementation for Forge/OS, with device-configuration metadata,
+    robot/controller model JSON, URDF/SRDF kinematics and Qt translation files. Intended as the
+    starting point for a vendor robot driver plugin.
+  note: >-
+    Predates the company's August 2024 shutdown by three months and has not been touched since; there
+    is no registry release and no maintainer to cut one.
+registries_checked:
+- registry: npm
+  query: ready-robotics, forgeos
+  first_party_hits: 0
+- registry: pypi
+  packages_probed: [forgeos, ready-robotics, readyrobotics, forge-edge]
+  first_party_hits: 0
+  status: 404
+- registry: crates.io
+  query: forgeos
+  first_party_hits: 0
+- registry: rubygems
+  first_party_hits: 0
+- registry: nuget
+  first_party_hits: 0

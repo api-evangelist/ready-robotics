@@ -1,0 +1,79 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.therobotreport.com/ready-robotics-maker-of-forgeos-shuts-down/
+summary: >-
+  READY Robotics ceased operations in August 2024. This lifecycle record documents the end-of-life of
+  the company and of every developer surface it operated, not a published deprecation policy — the
+  company never published one that survives, and there is nothing left to deprecate.
+company_status: defunct
+versioning:
+  scheme: null
+  policy_url: null
+  note: no versioning policy is reachable; the documentation hosts no longer resolve
+deprecation_policy:
+  published: false
+  sunset_header: unknown
+  note: >-
+    No deprecation or Sunset/Deprecation (RFC 8594) policy could be read. The developer documentation
+    host that would have carried one is NXDOMAIN.
+status_page:
+  published: false
+  url: null
+  note: status.ready-robotics.com does not resolve
+sla:
+  published: false
+events:
+- date: '2016'
+  event: founded
+  detail: READY Robotics founded in 2016, spun out of Johns Hopkins University; headquartered in Columbus, Ohio.
+  source: https://www.crunchbase.com/organization/ready-robotics
+- date: '2024-08'
+  event: shutdown
+  detail: >-
+    Company laid off staff and ceased operations after a funding round fell through at the eleventh
+    hour. Wind-down handled as an assignment for the benefit of creditors (ABC) rather than a formal
+    bankruptcy.
+  source: https://www.therobotreport.com/ready-robotics-maker-of-forgeos-shuts-down/
+- date: '2024-08-13/2024-08-15'
+  event: asset-liquidation
+  detail: >-
+    Equipment auctioned through Silicon Valley Disposition — nearly 50 robot arms from multiple
+    vendors plus CNC machine tools.
+  source: https://www.therobotreport.com/ready-robotics-maker-of-forgeos-shuts-down/
+- date: '2024-05-17'
+  event: last-first-party-commit
+  detail: Last push to the RAL2 sample driver repository, the newest first-party code in the GitHub organization.
+  source: https://github.com/ready-robotics/ral2-sample-driver
+surface_end_of_life:
+- host: developer.ready-robotics.com
+  role: developer portal / Forge Edge API reference
+  observed: NXDOMAIN
+  checked: '2026-08-26'
+  last_archived: '2023-06-28'
+- host: docs.ready-robotics.com
+  role: Forge/OS product documentation (Docusaurus)
+  observed: NXDOMAIN
+  checked: '2026-08-26'
+  last_archived: '2024-04-19'
+- host: market.ready-robotics.com
+  role: Forge/OS app marketplace
+  observed: NXDOMAIN
+  checked: '2026-08-26'
+- host: support.ready-robotics.com
+  role: support / knowledge base
+  observed: NXDOMAIN
+  checked: '2026-08-26'
+- host: portal.ready-robotics.com
+  role: customer portal
+  observed: NXDOMAIN
+  checked: '2026-08-26'
+surviving_surfaces:
+- url: https://www.ready-robotics.com/
+  status: 403
+  note: resolves via Cloudflare; every request is met with an interactive JS challenge. No MX record on the domain.
+- url: https://github.com/ready-robotics
+  status: 200
+  note: organization is public and intact — 58 repositories, mostly vendored upstream C++ dependencies.
+- url: https://ready-robotics.github.io/
+  status: 200
+  note: GitHub Pages site for the "READY User Documentation" repo now serves only the string "Hello World".

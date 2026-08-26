@@ -1,0 +1,19 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.ready-robotics.com/
+limit_count: 0
+note: >-
+  No published rate limits could be recorded. Forge Edge advertised a REST API with an OpenAPI
+  description, but that reference lived on developer.ready-robotics.com, which no longer resolves
+  after the company's August 2024 shutdown. The surviving marketing site returns a Cloudflare
+  interactive challenge (HTTP 403) for every path. Nothing was observed on a live response, so this
+  zero records unreadability, not a documented absence of limits.
+limits: []
+response_headers: []
+exhaustion_status: null
+evidence:
+- url: https://www.ready-robotics.com/
+  status: 403
+- url: https://developer.ready-robotics.com/
+  status: 0
+  detail: NXDOMAIN
