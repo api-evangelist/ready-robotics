@@ -1,18 +1,17 @@
 aid: ready-robotics
 name: Ready Robotics
-description: >-
-  READY Robotics was a Columbus, Ohio industrial-automation software company, founded in 2016 out of
-  Johns Hopkins University, that built Forge/OS — a universal operating system for industrial robots.
+description: READY Robotics was a Columbus, Ohio industrial-automation software company, founded in 2016
+  out of Johns Hopkins University, that built Forge/OS — a universal operating system for industrial robots.
   Forge/OS presented one low-code programming and control surface across hundreds of robot models from
-  ABB, Epson, FANUC, Kawasaki, Stäubli, Universal Robots and Yaskawa, and its Forge Edge product
-  advertised a REST API with an OpenAPI/Swagger description plus client tooling for Python, JavaScript
-  and C++, alongside the RAL2 (Robot Abstraction Layer 2) C++/Qt plugin interface used to write new
-  robot drivers. The company ceased operations in August 2024 after a funding round collapsed, and its
-  assets were liquidated through an assignment for the benefit of creditors. Every developer-facing
-  host it operated — developer., docs., portal., market. and support.ready-robotics.com — no longer
-  resolves in DNS, so no live machine-readable contract remains. What survives publicly is the
-  marketing site behind a Cloudflare challenge and the GitHub organization, which still carries the
-  RAL2 sample driver and the vendored C++ dependencies Forge/OS was built on.
+  ABB, Epson, FANUC, Kawasaki, Stäubli, Universal Robots and Yaskawa, and its Forge Edge product advertised
+  a REST API with an OpenAPI/Swagger description plus client tooling for Python, JavaScript and C++, alongside
+  the RAL2 (Robot Abstraction Layer 2) C++/Qt plugin interface used to write new robot drivers. The company
+  ceased operations in August 2024 after a funding round collapsed, and its assets were liquidated through
+  an assignment for the benefit of creditors. Every developer-facing host it operated — developer., docs.,
+  portal., market. and support.ready-robotics.com — no longer resolves in DNS, so no live machine-readable
+  contract remains. What survives publicly is the marketing site behind a Cloudflare challenge and the
+  GitHub organization, which still carries the RAL2 sample driver and the vendored C++ dependencies Forge/OS
+  was built on.
 url: https://raw.githubusercontent.com/api-evangelist/ready-robotics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -42,7 +41,7 @@ accessModel:
   method: derived
 specificationVersion: '0.20'
 created: '2026-08-26'
-modified: '2026-08-26'
+modified: '2026-09-15'
 tags:
 - Robotics
 - Industrial Automation
@@ -83,11 +82,10 @@ x-enrichment:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    READY Robotics ceased operations in August 2024 and withdrew every developer host from DNS —
-    developer.ready-robotics.com, which carried the Forge Edge REST API reference and its OpenAPI
-    description, is NXDOMAIN, as are docs., market., portal. and support.ready-robotics.com, leaving
-    only a Cloudflare-challenged marketing site and the intact GitHub organization.
+  detail: READY Robotics ceased operations in August 2024 and withdrew every developer host from DNS —
+    developer.ready-robotics.com, which carried the Forge Edge REST API reference and its OpenAPI description,
+    is NXDOMAIN, as are docs., market., portal. and support.ready-robotics.com, leaving only a Cloudflare-challenged
+    marketing site and the intact GitHub organization.
   evidence:
   - url: https://developer.ready-robotics.com/
     status: 0
@@ -98,3 +96,4 @@ x-coverage:
   - url: https://github.com/ready-robotics
     status: 200
   checked: '2026-08-26'
+x-status: defunct
